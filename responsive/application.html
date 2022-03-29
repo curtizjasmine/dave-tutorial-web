@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <meta name="theme-color" content="#ee7711">
+ <title>Peridic table of elements</title>
+ 
+ <style type="text/css">
+  h1{
+    color: black;
+  }
+html { 
+  width: 100%; 
+  font-family: sans-serif; 
+  background-color: #fdfdfd; 
+}
+@media (max-width: 600px) {
+ html { 
+  width: 600px;
+   } 
+ }
+@media (max-width: 800px) {
+ body { 
+  margin: 0; 
+  } 
+}
+
+#detour { 
+  font-size: 11px; 
+  line-height: 3;
+   text-align: center;
+    color: #333; 
+  }
+#footnote {
+ font-size: 10px;
+  text-align: center; 
+  color: #333; 
+}
+#periodic { 
+  margin: 0 
+  auto; 
+  border-spacing: 3px;
+   }
+@media (min-width: 701px) and (max-width: 800px)
+  { 
+    #periodic {
+   border-spacing: 2px; 
+   } 
+ }
+@media (max-width: 700px) {
+ #periodic { 
+  border-spacing: 1px;
+   }
+    }
+#periodic tr td { 
+  background-color: #f8f8f8; 
+  width: 52px; height:  38px;
+cursor: pointer;
+
+border-width: 3px; }
+@media (max-width: 700px) { 
+  #periodic tr td { 
+    border-width: 2px; }
+     }
+#periodic tr td.empty { 
+  background-color:  transparent;
+ cursor: auto;
+  border: none; text-align: left; 
+   }
+#periodic tr.spacer td { 
+  height: 10px; 
+}
+#periodic tr td sup { 
+  font-size: 11px; 
+  display: block; 
+  text-align: center;
+   }
+#periodic tr td { 
+  font-size: 15px;
+   text-align: center;
+    position: relative;
+     }
+#periodic tr td.sel {
+ border-style: inset; 
+ text-shadow: 1px 1px 1px #222; 
+}
+#periodic tr td.sel sup::before { 
+  content: '\25CF'; 
+  color: #0f0; 
+  font-size: 8px;
+ position: absolute;
+  top: -1px; 
+  left: 1px;
+   }
+#desc { 
+  padding: 0 30px; 
+  color: #555;
+   }
+#examples {
+ margin: 0 auto; 
+}
+#examples tr td { 
+  background-color: #fff; width: 167px; height: 167px;
+font-size: 48px; color: #aaa; text-align: center;
+  background-size: cover; background-repeat: no-repeat;
+background-position: center center; 
+}
+#examples tr td a { 
+  display: block; width: 100%; height: 100%;
+text-align: left; vertical-align: top;
+font-size: 16px; color: #888; text-decoration: none; }
+table.hide_optional tr.optional { display: none; }
+#HY{
+  background-color: black;
+  color: black;  
+}
+#hy{
+  color: red;
+  box-shadow: 2px  2px 3px;
+ 
+  margin-left: 300px;
+}
+.inside{
+  
+  margin-top:  110px;
+}
+ </style>
+ <h1 style="text-align: center;">PERIODIC TABLE OF  ELEMENTS</h1>
+ <div class="inside">
+  <table id="periodic">
+  <td id="HY"  style="background: #66ff99; margin-top: 300px; position: absolute; top: -20%;  left: 40%; width: 80px;  height: 70px; font-size: 
+  18pt;"><sup title="Atomic Mass">1</sup>H <br><label style="font-family: bold; font-size: 6pt;">Hydrogen</label></td>
+</table>
+ <table id="periodic">
+  <tr id="p1">
+   <td id="H" style="background: #66ff99;"><sup>1</sup>H<br><label style="font-family: bold; font-size: 6pt;">Hydrogen</label></td>
+   <td class="empty" colspan="16"></td>
+   <td id="He" style="background: pink;"><sup>2</sup>He<br><label style="font-family: bold; font-size: 6pt;">Helium</label></td>
+  </tr>
+  <tr id="p2">
+   <td id="Li" style="background: red;"><sup>3</sup>Li<br><label style="font-family: bold; font-size: 6pt;">Lithium</label></td>
+   <td id="Be" style="background: #ffd633;"><sup>4</sup>Be<br><label style="font-family: bold; font-size: 6pt;">Beryllium</label></td>
+   <td class="empty" id="desc" colspan="10" rowspan="2"></td>
+   <td id="B" style="background: #ffd633;"><sup>5</sup>B<br><label style="font-family: bold; font-size: 6pt;">Boron</label></td>
+   <td id="C" style="background: #66ff99;"><sup>6</sup>C <br><label style="font-family: bold; font-size: 6pt;">Carbon</label></td>
+   <td id="N" style="background: #66ff99;"><sup>7</sup>N <br><label style="font-family: bold; font-size: 6pt;">Nitrogen</label></td>
+   <td id="O" style="background: #66ff99;"><sup>8</sup>O <br><label style="font-family: bold; font-size: 6pt;">Oxygen</label></td>
+   <td id="F" style="background: #66ff99;"><sup>9</sup>F <br><label style="font-family: bold; font-size: 6pt;">Flourine</label></td>
+   <td id="Ne" style="background: pink;" ><sup>10</sup>Ne <br><label style="font-family: bold; font-size: 6pt;">Neon</label></td>
+  </tr>
+  <tr id="p3">
+   <td id="Na" style="background: red;" title="Sodium"><sup>11</sup>Na <br><label style="font-family: bold; font-size: 6pt;">Sodium</label></td>
+   <td id="Mg" style="background: #ffd633;" title="Magnesium"><sup>12</sup>Mg <br><label style="font-family: bold; font-size: 6pt;">Magnesium</label> </td>
+   <td id="Al" style="background: violet;"  title="Aluminium"><sup>13</sup>Al <br><label style="font-family: bold; font-size: 6pt;">Aluminium</label></td>
+   <td id="Si" style="background: #ffd633;" title="Silicon"><sup>14</sup>Si <br><label style="font-family: bold; font-size: 6pt;">Silicon</label></td>
+   <td id="P"  style="background: #66ff99;" title="Phosphorus"><sup>15</sup>P <br><label style="font-family: bold; font-size: 6pt;">Phosphorus</label></td>
+   <td id="S"  style="background: #66ff99;" title="Sulfur"><sup>16</sup>S <br><label style="font-family: bold; font-size: 6pt;">Sulfur</label></td>
+   <td id="Cl" style="background: #66ff99;" title="Chlorine"><sup>17</sup>Cl <br><label style="font-family: bold; font-size: 6pt;">Chlorine</label></td>
+   <td id="Ar" style="background: pink;"    title="Argon"><sup>18</sup>Ar <br><label style="font-family: bold; font-size: 6pt;">Argon</label></td>
+  </tr>
+  <tr id="p4">
+   <td id="K"  style="background: red;"      title="Potassium"><sup>19</sup>K<br><label style="font-family: bold; font-size: 6pt;">Potassium</label></td>
+   <td id="Ca" style="background: #ffd633;"  title="Calcium"><sup>20</sup>Ca <br><label style="font-family: bold; font-size: 6pt;">Calcium</label></td>
+   <td id="Sc" style="background: skyblue;"  title="Scandium"><sup>21</sup>Sc <br><label style="font-family: bold; font-size: 6pt;">Scandium</label></td>
+   <td id="Ti" style="background: skyblue;"  title="Titanium"><sup>22</sup>Ti <br><label style="font-family: bold; font-size: 6pt;">Titanium</label></td>
+   <td id="V"  style="background: skyblue;"  title="Vanadium"><sup>23</sup>V  <br><label style="font-family: bold; font-size: 6pt;">Vanadium</label></td>
+   <td id="Cr" style="background: skyblue;"  title="Chromium"><sup>24</sup>Cr <br><label style="font-family: bold; font-size: 6pt;">Chromium</label></td>
+   <td id="Mn" style="background: skyblue;"  title="Manganese"><sup>25</sup>Mn<br><label style="font-family: bold; font-size: 6pt;">Manganese</label></td>
+   <td id="Fe" style="background: skyblue;"  title="Iron"><sup>26</sup>Fe <br><label style="font-family: bold; font-size: 6pt;">Iron</label></td>
+   <td id="Co" style="background: skyblue;"  title="Cobalt"><sup>27</sup>Co <br><label style="font-family: bold; font-size: 6pt;">Cobalt</label></td>
+   <td id="Ni" style="background: skyblue;"  title="Nickel"><sup>28</sup>Ni <br><label style="font-family: bold; font-size: 6pt;">Nickel</label></td>
+   <td id="Cu" style="background: skyblue;"  title="Copper"><sup>29</sup>Cu <br><label style="font-family: bold; font-size: 6pt;">Copper</label></td>
+   <td id="Zn" style="background: violet;"   title="Zinc"><sup>30</sup>Zn <br><label style="font-family: bold; font-size: 6pt;">Zinc</label></td>
+   <td id="Ga" style="background: violet;"   title="Gallium"><sup>31</sup>Ga <br><label style="font-family: bold; font-size: 6pt;">Gallium</label></td>
+   <td id="Ge" style="background: #ffd633;"  title="Germanium"><sup>32</sup>Ge <br><label style="font-family: bold; font-size: 6pt;">Germanium</label></td>
+   <td id="As" style="background: #ffd633;"  title="Arsenic"><sup>33</sup>As  <br><label style="font-family: bold; font-size: 6pt;">Arsenic</label></td>
+   <td id="Se" style="background: #66ff99;"  title="Selenium"><sup>34</sup>Se <br><label style="font-family: bold; font-size: 6pt;">Selenium</label></td>
+   <td id="Br" style="background: #66ff99;"  title="Bromine"><sup>35</sup>Br <br><label style="font-family: bold; font-size: 6pt;">Bromine</label></td>
+   <td id="Kr" style="background: pink;"     title="Krypton"><sup>36</sup>Kr <br><label style="font-family: bold; font-size: 6pt;">Krypton</label></td>
+  </tr>
+  <tr id="p5">
+   <td id="Rb" style="background: red;"      title="Rubidium"><sup>37</sup>Rb <br><label style="font-family: bold; font-size: 6pt;">Rubidium</label></td>
+   <td id="Sr" style="background: #ffd633;"  title="Strontium"><sup>38</sup>Sr <br><label style="font-family: bold; font-size: 6pt;">Strontium</label></td>
+   <td id="Y" style="background: skyblue;"   title="Yttrium"><sup>39</sup>Y <br><label style="font-family: bold; font-size: 6pt;">Yttrium</label></td>
+   <td id="Zr" style="background: skyblue;"  title="Zirconium"><sup>40</sup>Zr <br><label style="font-family: bold; font-size: 6pt;">Zirconium</label></td>
+   <td id="Nb" style="background: skyblue;"  title="Niobium"><sup>41</sup>Nb <br><label style="font-family: bold; font-size: 6pt;">Niobium</label></td>
+   <td id="Mo" style="background: skyblue;"  title="Molybdenum"><sup>42</sup>Mo <br><label style="font-family: bold; font-size: 6pt;">Molybdenum</label></td>
+   <td id="Tc"style="background: skyblue;"   title="Technetium"><sup>43</sup>Tc <br><label style="font-family: bold; font-size: 6pt;">Technetium</label> </td>
+   <td id="Ru" style="background: skyblue;"  title="Ruthenium"><sup>44</sup>Ru <br><label style="font-family: bold; font-size: 6pt;">Ruthenium</label></td>
+   <td id="Rh" style="background: skyblue;"  title="Rhodium"><sup>45</sup>Rh <br><label style="font-family: bold; font-size: 6pt;">Rhodium</label></td>
+   <td id="Pd"style="background: skyblue;"   title="Palladium"><sup>46</sup>Pd <br><label style="font-family: bold; font-size: 6pt;">Palladium</label></td>
+   <td id="Ag" style="background: skyblue;"  title="Silver"><sup>47</sup>Ag <br><label style="font-family: bold; font-size: 6pt;">Silver</label></td>
+   <td id="Cd" style="background: violet;"   title="Cadmium"><sup>48</sup>Cd <br><label style="font-family: bold; font-size: 6pt;">Cadmium</label></td>
+   <td id="In" style="background: violet;"   title="Indium"><sup>49</sup>In <br><label style="font-family: bold; font-size: 6pt;">Indium</label></td>
+   <td id="Sn" style="background: violet;"   title="Tin"><sup>50</sup>Sn <br><label style="font-family: bold; font-size: 6pt;">Tin</label></td>
+   <td id="Sb" style="background: #ffd633;"  title="Antimony"><sup>51</sup>Sb <br><label style="font-family: bold; font-size: 6pt;">Antimony</label></td>
+   <td id="Te" style="background: #ffd633;"  title="Tellurium"><sup>52</sup>Te <br><label style="font-family: bold; font-size: 6pt;">Tellurium</label></td>
+   <td id="I"  style="background: #66ff99;"  title="Iodine"><sup>53</sup>I <br><label style="font-family: bold; font-size: 6pt;">Iodine</label></td>
+   <td id="Xe" style="background: pink;"     title="Xenon"><sup>54</sup>Xe <br><label style="font-family: bold; font-size: 6pt;">Xenon</label></td>
+  </tr>
+  <tr id="p6">
+   <td id="Cs" style="background: red;"      title="Caesium"><sup>55</sup>Cs <br><label style="font-family: bold; font-size: 6pt;">Caesium</label></td>
+   <td id="Ba" style="background: #ffd633;"  title="Barium"><sup>56</sup>Ba <br><label style="font-family: bold; font-size: 6pt;">Barium</label></td>
+    <td id="Ln" style="background:#0066cc;"  title="Lanthinides"><sup>57-71</sup>Ln <br><label style="font-family: bold; font-size: 6pt;">Lanthinides</label></td>
+   <td id="Hf" style="background: skyblue;"  title="Hafnium"><sup>72</sup>Hf <br><label style="font-family: bold; font-size: 6pt;">Hafnium</label> </td>
+   <td id="Ta" style="background: skyblue;"  title="Tantalum"><sup>73</sup>Ta <br><label style="font-family: bold; font-size: 6pt;">Tantalum</label></td>
+   <td id="W" style="background: skyblue;"   title="Tungsten"><sup>74</sup>W <br><label style="font-family: bold; font-size: 6pt;">Tungsten</label></td>
+   <td id="Re" style="background: skyblue;"  title="Rhenium"><sup>75</sup>Re <br><label style="font-family: bold; font-size: 6pt;">Rhenium</label></td>
+   <td id="Os" style="background: skyblue;"  title="Osmium"><sup>76</sup>Os <br><label style="font-family: bold; font-size: 6pt;">Osmium</label></td>
+   <td id="Ir" style="background: skyblue;"  title="Iridium"><sup>77</sup>Ir <br><label style="font-family: bold; font-size: 6pt;">Iridium</label></td>
+   <td id="Pt" style="background: skyblue;"  title="Platinum"><sup>78</sup>Pt <br><label style="font-family: bold; font-size: 6pt;">Platinum</label></td>
+   <td id="Au" style="background: skyblue;"  title="Gold"><sup>79</sup>Au <br><label style="font-family: bold; font-size: 6pt;">Gold</label></td>
+   <td id="Hg" style="background: violet;"   title="Mercury"><sup>80</sup>Hg <br><label style="font-family: bold; font-size: 6pt;">Mercury</label></td>
+   <td id="Tl" style="background: violet;"   title="Thallium"><sup>81</sup>Tl <br><label style="font-family: bold; font-size: 6pt;">Thallium</label></td>
+   <td id="Pb" style="background: violet;"   title="Lead"><sup>82</sup>Pb <br><label style="font-family: bold; font-size: 6pt;">Lead</label></td>
+   <td id="Bi" style="background: violet;"   title="Bismuth"><sup>83</sup>Bi <br><label style="font-family: bold; font-size: 6pt;">Bismuth</label></td>
+   <td id="Po" style="background: violet;"   title="Polonium"><sup>84</sup>Po <br><label style="font-family: bold; font-size: 6pt;">Polonium</label></td>
+   <td id="At" style="background: #ffd633;"  title="Astatine"><sup>85</sup>At <br><label style="font-family: bold; font-size: 6pt;">Astatine</label></td>
+   <td id="Rn" style="background: pink;"     title="Radon"><sup>86</sup>Rn <br><label style="font-family: bold; font-size: 6pt;">Radon</label></td>
+  </tr>
+  <tr id="p7">
+   <td id="Fr" style="background: red;"      title="Francium"><sup>87</sup>Fr <br><label style="font-family: bold; font-size: 6pt;">Francium</label></td>
+   <td id="Ra" style="background: #ffd633;"  title="Radium"><sup>88</sup>Ra <br><label style="font-family: bold; font-size: 6pt;">Radium</label></td>
+   <td id="Ac" style="background: #00cc99;"  title="Actinides">89-103<sup></sup>An <br><label style="font-family: bold; font-size: 6pt;">Actinides</label></td>
+   <td id="Rf" style="background: skyblue;"  title="Rutherfordium"><sup>104</sup>Rf <br><label style="font-family: bold; font-size: 6pt;">Rutherfordium</label></td>
+   <td id="Db" style="background: skyblue;"  title="Dubnium"><sup>105</sup>Db <br><label style="font-family: bold; font-size: 6pt;">Dubnium</label></td>
+   <td id="Sg" style="background: skyblue;"  title="Seaborgium"><sup>106</sup>Sg<br> <label style="font-family: bold; font-size: 6pt;">Seaborgium</label></td>
+   <td id="Bh" style="background: skyblue;"  title="Bohrium"><sup>107</sup>Bh <br><label style="font-family: bold; font-size: 6pt;">Bohrium</label></td>
+   <td id="Hs" style="background: skyblue;"  title="Hassium"><sup>108</sup>Hs<br> <label style="font-family: bold; font-size: 6pt;">Hassium</label></td>
+   <td id="Mt" style="background: #669999;"  title="Meitnerium"><sup>109</sup>Mt<br> <label style="font-family: bold; font-size: 6pt;">Meitnerium</label></td>
+   <td id="Ds" style="background: #669999;"  title="Darmstadtium"><sup>110</sup>Ds<br> <label style="font-family: bold; font-size: 6pt;">Darmstadtium</label></td>
+   <td id="Rg" style="background: #669999;"  title="Roentgenium"><sup>111</sup>Rg <br><label style="font-family: bold; font-size: 6pt;">Roentgenium</label></td>
+   <td id="Cn" style="background: violet;"   title="Copernicium"><sup>112</sup>Cn<br> <label style="font-family: bold; font-size: 6pt;">Copernicium</label></td>
+   <td id="Nh" style="background: #669999;"  title="Nihonium"><sup>113</sup>Nh <br><label style="font-family: bold; font-size: 6pt;">Nihonium</label></td>
+   <td id="Fl" style="background: #669999;"  title="Flerovium"><sup>114</sup>Fl<br> <label style="font-family: bold; font-size: 6pt;">Flerovium</label></td>
+   <td id="Mc" style="background: #669999;"  title="Moscovium"><sup>115</sup>Mc <br><label style="font-family: bold; font-size: 6pt;">Moscovium</label></td>
+   <td id="Lv" style="background: #669999;"  title="Livermorium"><sup>116</sup>Lv <br><label style="font-family: bold; font-size: 6pt;">Livermorium</label></td>
+   <td id="Ts" style="background: #669999;"  title="Tennessine"><sup>117</sup>Ts <br><label style="font-family: bold; font-size: 6pt;">Tennessine</label></td>
+   <td id="Og" style="background: #669999;"  title="Oganesson"><sup>118</sup>Og <br><label style="font-family: bold; font-size: 6pt;">Oganesson</label></td>
+  </tr>
+  <tr class="spacer"><td class="empty" colspan=18></td></tr>
+  <tr>
+   <td class="empty" colspan="2"></td>
+   <td id="La" style="background:#0066cc;" title="Lanthanum"><sup>57</sup>La <br><label style="font-family: bold; font-size: 6pt;">Lanthanum</label></td>
+   <td id="Ce" style="background:#0066cc;" title="Cerium"><sup>58</sup>Ce <br><label style="font-family: bold; font-size: 6pt;">Cerium</label></td>
+   <td id="Pr" style="background:#0066cc;" title="Praseodymium"><sup>59</sup>Pr <br><label style="font-family: bold; font-size: 6pt;">Praseodymium</label></td>
+   <td id="Nd" style="background:#0066cc;" title="Neodymium"><sup>60</sup>Nd <br><label style="font-family: bold; font-size: 6pt;">Neodymium</label></td>
+   <td id="Pm" style="background:#0066cc;" title="Promethium"><sup>61</sup>Pm <br><label style="font-family: bold; font-size: 6pt;">Promethium</label></td>
+   <td id="Sm" style="background:#0066cc;" title="Samarium"><sup>62</sup>Sm <br><label style="font-family: bold; font-size: 6pt;">Samarium</label></td>
+   <td id="Eu" style="background:#0066cc;" title="Europium"><sup>63</sup>Eu <br><label style="font-family: bold; font-size: 6pt;">Europium</label></td>
+   <td id="Gd" style="background:#0066cc;" title="Gadolinium"><sup>64</sup>Gd <br><label style="font-family: bold; font-size: 6pt;">Gadolinium</label></td>
+   <td id="Tb" style="background:#0066cc;" title="Terbium"><sup>65</sup>Tb <br><label style="font-family: bold; font-size: 6pt;">Terbium</label></td>
+   <td id="Dy" style="background:#0066cc;" title="Dysprosium"><sup>66</sup>Dy <br><label style="font-family: bold; font-size: 6pt;">Dysprosium</label></td>
+   <td id="Ho" style="background:#0066cc;" title="Holmium"><sup>67</sup>Ho <br><label style="font-family: bold; font-size: 6pt;">Holmium</label></td>
+   <td id="Er" style="background:#0066cc;" title="Erbium"><sup>68</sup>Er <br><label style="font-family: bold; font-size: 6pt;">Erbium</label></td>
+   <td id="Tm" style="background:#0066cc;" title="Thulium"><sup>69</sup>Tm <br><label style="font-family: bold; font-size: 6pt;">Thulium</label></td>
+   <td id="Yb" style="background:#0066cc;" title="Ytterbium"><sup>70</sup>Yb <br><label style="font-family: bold; font-size: 6pt;">Ytterbium</label></td>
+   <td id="Lu" style="background:#0066cc;" title="Lutetium"><sup>71</sup>Lu <br><label style="font-family: bold; font-size: 6pt;">Lutetium</label></td>
+   <td class="empty"></td>
+  </tr>
+  <tr>
+   <td class="empty" colspan="2"></td>
+   <td id="Ac" style="background: #00cc99;" title="Actinium"><sup>89</sup>Ac <br><label style="font-family: bold; font-size: 6pt;">Actinium</label></td>
+   <td id="Th" style="background: #00cc99;" title="Thorium"><sup>90</sup>Th <br><label style="font-family: bold; font-size: 6pt;">Thorium</label></td>
+   <td id="Pa" style="background: #00cc99;" title="Protactinium"><sup>91</sup>Pa <br><label style="font-family: bold; font-size: 6pt;">Protactinium</label></td>
+   <td id="U"  style="background: #00cc99;" title="Uranium"><sup>92</sup>U <br><label style="font-family: bold; font-size: 6pt;">Uranium</label></td>
+   <td id="Np" style="background: #00cc99;" title="Neptunium"><sup>93</sup>Np <br><label style="font-family: bold; font-size: 6pt;">Neptunium</label></td>
+   <td id="Pu" style="background: #00cc99;" title="Plutonium"><sup>94</sup>Pu <br><label style="font-family: bold; font-size: 6pt;">Plutonium</label></td>
+   <td id="Am" style="background: #00cc99;" title="Americium"><sup>95</sup>Am <br><label style="font-family: bold; font-size: 6pt;">Americium</label></td>
+   <td id="Cm" style="background: #00cc99;" title="Curium"><sup>96</sup>Cm <br><label style="font-family: bold; font-size: 6pt;">Curium</label></td>
+   <td id="Bk" style="background: #00cc99;" title="Berkelium"><sup>97</sup>Bk <br><label style="font-family: bold; font-size: 6pt;">Berkelium</label></td>
+   <td id="Cf" style="background: #00cc99;" title="Californium"><sup>98</sup>Cf <br><label style="font-family: bold; font-size: 6pt;">Californium</label></td>
+   <td id="Es" style="background: #00cc99;" title="Einsteinium"><sup>99</sup>Es <br><label style="font-family: bold; font-size: 6pt;">Einsteinium</label></td>
+   <td id="Fm" style="background: #00cc99;" title="Fermium"><sup>100</sup>Fm <br><label style="font-family: bold; font-size: 6pt;">Fermium</label></td>
+   <td id="Md" style="background: #00cc99;" title="Mendelevium"><sup>101</sup>Md <br><label style="font-family: bold; font-size: 6pt;">Mendelevium</label></td>
+   <td id="No" style="background: #00cc99;" title="Nobelium"><sup>102</sup>No <br><label style="font-family: bold; font-size: 6pt;">Nobelium</label></td>
+   <td id="Lr" style="background: #00cc99;" title="Lawrencium"><sup>103</sup>Lr <br><label style="font-family: bold; font-size: 6pt;">Lawrencium</label></td>
+   <td class="empty"></td>
+  </tr>
+ </table>
+</div>
+ <h2>
+  
+  
+  
+ 
+</html>

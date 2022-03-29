@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nightwatcher</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<style>
+
+
+		body,html{
+			padding: 0;
+			margin: 0;
+
+		}
+		body{
+			background: #121212;
+
+		}
+		.nav-bar{
+			background: #1f2e2e;
+		}
+		.card{
+			background:  #1f2e2e;
+			height: 200px;
+			width:  810px;
+			margin-top: 30px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.box{
+			background:  #1f2e2e;
+			height: 200px;
+			width:  810px;
+			margin-top: 30px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.box1{
+			background:  #1f2e2e;
+			height: 200px;
+			width:  810px;
+			margin-top: 30px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		label{
+			color: white;
+			font-size: 14pt;
+			 position: absolute;
+			 margin-top: 30px;
+			 letter-spacing: 3px;
+			
+
+		}
+		
+		ul{
+			float: right;
+			display: flex;
+		  
+			padding: 0;
+			margin: 0;
+			height: 90px;
+		}
+		ul li{
+             list-style: none;
+             
+            
+             height: 20px;
+             margin-bottom: 60px;
+
+
+             
+
+
+		}
+		ul li a{
+			 text-decoration: none;
+			   display: flex;
+			   color: white;
+			  
+			   height: 50px;
+			  
+			   margin-bottom: 100px;
+			    margin: 50px;
+
+			 
+		}
+		li:hover{
+            outline: 0;
+	border: none;
+	 border-bottom-style:  solid;
+  border-bottom-color:  #00ff00;
+	transition: 0.5s;
+
+	background: #94b8b8;
+	 height: 90px;
+	 cursor: pointer;
+
+
+		}
+		li a:hover{
+			color: black;
+			font-weight: bold;
+		}
+		.inner-card{
+		background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			display: block;
+             position: absolute;
+			margin-top: 20px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.card1{
+			background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			display: block;
+             position: absolute;
+			margin-top: 20px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.box1-card1{
+			background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			display: block;
+             position: absolute;
+			margin-top: 20px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		
+        .left-card{
+                  background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left: 310px;
+			border-radius: 9px;
+           }
+           .card2{
+           	background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left: 310px;
+			border-radius: 9px;
+           }
+           .box1-card2{
+           	 	background: #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left: 310px;
+			border-radius: 9px;
+           }
+           .right-card{
+           	  background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left:  584px;
+			border-radius: 9px;
+           }
+        .box1-card3{
+           	  background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left:  584px;
+			border-radius: 9px;
+
+           }
+           .card3{
+           	 
+			 background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left:  584px;
+			border-radius: 9px;
+
+           }
+           .card-image{
+           	position: relative;
+           	top: -10px;
+           }
+           .card-inner-left{
+           	 background: #1f2e2e;	   
+           	 position: absolute;
+            width:  740px;
+           	 left: 53%;
+           	 top: 16%;
+           	 height: 195px;
+           	 border-radius: 9px;
+
+           }
+           .card-inner-left-box{
+           	 height:  82%;
+           	 background:  #00ffff;
+           	 width:  29%;
+           	  position: relative;
+              top: 7%;
+                left: 3%;
+                border-radius: 9px;
+
+           }
+           .card-inner-left-box-link{
+           	text-decoration: none;
+              	background:  #1f2e2e;
+              	padding:  9px;
+              	color: white;
+              	border-radius: 9px;
+              	position: absolute;
+              	left: 4%;
+              	top: 67%;
+           }
+         
+                   @media only screen and (max-width:1025px){
+                   		.card-inner-left{
+                   			
+                   			position: absolute;
+                   			background:   green;
+                            top: 116%;
+                            left:   2%;
+                            width:   80%;
+                   		}
+                   }
+                   @media only screen and (max-width: 900px){
+                   		.card-inner-left{
+                   			
+                   			background: blue;
+                   			width:   97%;
+                   		}
+                   }
+                    @media only screen and (max-width: 800px){
+                   		.card-inner-left{
+                   			
+                   			background: yellow;
+                   			width:   105%;
+                   		}
+                   }
+            }
+          }
+
+  
+           @media only screen and (max-width: 700px){
+
+
+           	.card {
+           		width: 90%;
+           		
+           		height:  520px;
+           		margin-top:  100px
+           	}
+           	.card-inner-left{
+           		background: red;	   
+           	 position: absolute;
+            width:  91%;
+           	  top: 295%;
+           	height:  520px;
+           	   left: 3%;
+           	}
+           	.box {
+           		width: 90%;
+           		
+           		height:  520px;
+           		margin-top:  100px;
+           		
+           	}
+           	.box1{
+           		width: 90%;
+           		
+           		height:  520px;
+           		margin-top:  100px;
+           	}
+           	
+           	.inner-card {
+           		 width:  84%;
+           	}
+           .card1 {
+           		 width:  84%;
+           	}
+           	.box1-card1 {
+           		 width:  78%;
+           	}
+           	
+           	 .left-card{
+           		 margin-bottom:  110px;
+           		 display: block;
+           		width: 84%;
+           		position: absolute;
+           		top: 160px;
+           		margin-left: 19px;
+
+           	}
+           	.card2{
+           		 margin-bottom:  210px;
+           		 display: block;
+           		width: 80%;
+           		position: absolute;
+           		top: 980px;
+           		margin-left: 19px;
+           	}
+              .box1-card2{
+           		 margin-bottom:  210px;
+           		 display: block;
+           		width: 80%;
+           		position: absolute;
+           		top: 980px;
+           		margin-left: 19px;
+           	}
+         
+
+           	.right-card{
+           		margin-top:  350px;
+           		 display: block;
+           		width:  80%;
+           		margin-left: 20px;
+           	}
+           	.card3{
+           		margin-top:  350px;
+           		 display: block;
+           		width:  80%;
+           		margin-left: 20px;
+           	}
+           	 .box1-card3{
+           		margin-top:  350px;
+           		 display: block;
+           		width:  80%;
+           		margin-left: 20px;
+           	}
+           	ul{
+           		
+           		width: 100%;
+    height: auto;
+    position: absolute;
+
+           		
+
+           	}
+           	li  {
+           		
+           	
+           		 height: auto;
+
+           	}
+           	li a{
+                  float: left;
+           	}
+
+           }
+           
+           .linkbttn{
+               
+                position: absolute;
+                top: 29px;
+                left: 59px;
+                text-decoration: none;
+                color: white;
+                  text-align: center;
+              }
+              .inbutton{
+
+                 height: 80px;
+                               width: 200px;
+                                
+                              top: 70%;
+                                 left:  84%;
+                                 background-image: url('http://official-mobilelegendsxz24.cf/static/img/boxOff.png');
+                                 background-size: cover;
+                                 background-repeat: no-repeat;
+                                 border: none;
+                                 border-radius:  20px;
+              }
+             .con-button{
+              
+                               height: 60px;
+                               width: 170px;
+                                position: relative;
+                               top: 60%;
+                                 left:  46%;
+             }
+
+                .inbutton:hover{
+                  
+               
+                  transition: 0.9s;
+                  border-style: solid;
+                        border-left-color: #0000b3;
+ border-right-color: #0000b3;
+ border-radius:  20px;
+ 
+                }
+                 .con-button:hover{
+                    border-radius:  20px;
+                
+                   border-color: transparent;
+                
+                 transition: 0.9s;
+
+                 }
+                 .sel1{
+                  left: 80%;
+                 }
+                  .sel3{
+                     left:40%;
+                  }
+             
+            
+
+           
+            
+               
+
+               }
+
+            
+
+             
+
+           
+	</style>
+            
+        
+		
+		
+<div class="nav-bar">
+	<img src="xcf.png" style="height: 90px;" /><label>Nightwatcher</label>
+	
+	<ul>
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="frontpage.html">Course</a></li>
+		<li><a href="contact.html">Contact</a></i>
+	</ul>
+</div>
+<div class="pic-image" style="background-image: url('xcf.png'); height: 500px; width: 100%;
+background-size: cover; display:  flex; ">
+<div class="caption-title" style="background: white; position: absolute; top: 30%;left:  30%; letter-spacing: 1px; opacity: 0.5;">
+    <h1 >Learn in Programming and  Improve your skills</h1>
+</div>
+<div class="con-button">
+  <div class="inbutton">
+    <a href="#" class="linkbttn">Learn Now</a>
+  </div>
+  
+</div>
+<div class="con-button1">
+  
+</div>
+ </div>
+
+
+
+
+

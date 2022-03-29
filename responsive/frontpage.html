@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nightwatcher</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<style>
+		body,html{
+			padding: 0;
+			margin: 0;
+
+		}
+		body{
+			background: #121212;
+		}
+		.nav-bar{
+			background: #1f2e2e;
+		}
+		.card{
+			background:  #1f2e2e;
+			height: 200px;
+			width:  810px;
+			margin-top: 30px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.box{
+			background:  #1f2e2e;
+			height: 200px;
+			width:  810px;
+			margin-top: 30px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.box1{
+			background:  #1f2e2e;
+			height: 200px;
+			width:  810px;
+			margin-top: 30px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		label{
+			color: white;
+			font-size: 14pt;
+			 position: absolute;
+			 margin-top: 30px;
+			 letter-spacing: 3px;
+			
+
+		}
+		
+		ul{
+			float: right;
+			display: flex;
+		  
+			padding: 0;
+			margin: 0;
+			height: 90px;
+		}
+		ul li{
+             list-style: none;
+             
+            
+             height: 20px;
+             margin-bottom: 60px;
+
+
+             
+
+
+		}
+		ul li a{
+			 text-decoration: none;
+			   display: flex;
+			   color: white;
+			  
+			   height: 50px;
+			  
+			   margin-bottom: 100px;
+			    margin: 50px;
+
+			 
+		}
+		li:hover{
+            outline: 0;
+	border: none;
+	 border-bottom-style:  solid;
+  border-bottom-color:  #00ff00;
+	transition: 0.5s;
+
+	background: #94b8b8;
+	 height: 90px;
+	 cursor: pointer;
+
+
+		}
+		li a:hover{
+			color: black;
+			font-weight: bold;
+		}
+		.inner-card{
+		background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			display: block;
+             position: absolute;
+			margin-top: 20px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.card1{
+			background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			display: block;
+             position: absolute;
+			margin-top: 20px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		.box1-card1{
+			background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			display: block;
+             position: absolute;
+			margin-top: 20px;
+			margin-left: 20px;
+			border-radius: 9px;
+		}
+		
+        .left-card{
+                  background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left: 310px;
+			border-radius: 9px;
+           }
+           .card2{
+           	background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left: 310px;
+			border-radius: 9px;
+           }
+           .box1-card2{
+           	 	background: #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left: 310px;
+			border-radius: 9px;
+           }
+           .right-card{
+           	  background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left:  584px;
+			border-radius: 9px;
+           }
+        .box1-card3{
+           	  background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left:  584px;
+			border-radius: 9px;
+
+           }
+           .card3{
+           	 
+			 background:  #00ffff;
+			height: 155px;
+			width:  210px;
+			position: absolute;
+			margin-top: 20px;
+			margin-left:  584px;
+			border-radius: 9px;
+
+           }
+           .card-image{
+           	position: relative;
+           	top: -10px;
+           }
+           .card-inner-left{
+           	 background: #1f2e2e;	   
+           	 position: absolute;
+            width:  740px;
+           	 left: 53%;
+           	 top: 16%;
+           	 height: 195px;
+           	 border-radius: 9px;
+
+           }
+           .card-inner-left-box{
+           	 height:  82%;
+           	 background:  #00ffff;
+           	 width:  29%;
+           	  position: relative;
+              top: 7%;
+                left: 3%;
+                border-radius: 9px;
+
+           }
+           .card-inner-left-box-link{
+           	text-decoration: none;
+              	background:  #1f2e2e;
+              	padding:  9px;
+              	color: white;
+              	border-radius: 9px;
+              	position: absolute;
+              	left: 4%;
+              	top: 67%;
+           }
+
+           
+                   @media only screen and (max-width:1025px){
+                   		.card-inner-left{
+                   			
+                   			position: absolute;
+                   			background:   green;
+                            top: 116%;
+                            left:   2%;
+                            width:   80%;
+                   		}
+                   }
+                   @media only screen and (max-width: 900px){
+                   		.card-inner-left{
+                   			
+                   			background: blue;
+                   			width:   97%;
+                   		}
+                   }
+                    @media only screen and (max-width: 800px){
+                   		.card-inner-left{
+                   			
+                   			background: yellow;
+                   			width:   105%;
+                   		}
+                   }
+
+  
+           @media only screen and (max-width: 700px){
+
+
+           	.card {
+           		width: 90%;
+           		
+           		height:  520px;
+           		margin-top:  100px
+           	}
+           	.card-inner-left{
+           		background: red;	   
+           	 position: absolute;
+            width:  91%;
+           	  top: 295%;
+           	height:  520px;
+           	   left: 3%;
+           	}
+           	.box {
+           		width: 90%;
+           		
+           		height:  520px;
+           		margin-top:  100px;
+           		
+           	}
+           	.box1{
+           		width: 90%;
+           		
+           		height:  520px;
+           		margin-top:  100px;
+           	}
+           	
+           	.inner-card {
+           		 width:  84%;
+           	}
+           .card1 {
+           		 width:  84%;
+           	}
+           	.box1-card1 {
+           		 width:  78%;
+           	}
+           	
+           	 .left-card{
+           		 margin-bottom:  110px;
+           		 display: block;
+           		width: 84%;
+           		position: absolute;
+           		top: 160px;
+           		margin-left: 19px;
+
+           	}
+           	.card2{
+           		 margin-bottom:  210px;
+           		 display: block;
+           		width: 80%;
+           		position: absolute;
+           		top: 980px;
+           		margin-left: 19px;
+           	}
+              .box1-card2{
+           		 margin-bottom:  210px;
+           		 display: block;
+           		width: 80%;
+           		position: absolute;
+           		top: 980px;
+           		margin-left: 19px;
+           	}
+         
+
+           	.right-card{
+           		margin-top:  350px;
+           		 display: block;
+           		width:  80%;
+           		margin-left: 20px;
+           	}
+           	.card3{
+           		margin-top:  350px;
+           		 display: block;
+           		width:  80%;
+           		margin-left: 20px;
+           	}
+           	 .box1-card3{
+           		margin-top:  350px;
+           		 display: block;
+           		width:  80%;
+           		margin-left: 20px;
+           	}
+           	ul{
+           		
+           		width: 100%;
+    height: auto;
+    position: absolute;
+
+           		
+
+           	}
+           	li  {
+           		
+           	
+           		 height: auto;
+
+           	}
+           	li a{
+                  float: left;
+           	}
+
+           }
+            @media only screen and (max-width: 400px){
+            	
+            	#card-inner-left-box-link-side{
+            		top: 68%;
+            		margin-left: -84px;
+            	}
+            	#card-inner-left-box-side{
+            		margin-top: 200px;
+            		margin-left: -83px;
+
+            	}
+            	.card-inner-left{
+            	  left: 7%;
+            	  width: 287px;
+                     background:  #1f2e2e;
+            		}
+
+            		.card-inner-left-box{
+                height: 160px;
+                width:  257px;
+                top: 5%;
+                left: 7%;
+               
+            }
+            .card-inner-left-box-link{
+            	top: 28%;
+            	left: 10%;
+            }
+                       	ul{
+           		
+           		width: 70%;
+    height: auto;
+    position: absolute;
+   
+           	}
+           	li  {
+           		
+           	
+           		 height: auto;
+                 width: 45%;
+                
+                
+           	}
+           	li a{
+                  float: left;
+                  position: relative;
+                  right: 30px;
+                 
+                  
+                  
+           	}
+           	.card-image{
+           		position: relative;
+           		top: -20%;
+           		
+
+           	}
+            .inner-card {
+           		 width:  79%;
+           	}
+           	.card1 {
+           		 width:  79%;
+           	}
+           	.box1-card1{
+           		 width:  79%;
+           	}
+
+              .left-card{
+           		 margin-top:  220px;
+           		 display: block;
+           		width:  79%;
+           		margin-left: 19px;
+           	}
+           	.box1-card2{
+           		 margin-top:  640px;
+           		 display: block;
+           		width:  79%;
+           		margin-left: 19px;
+
+           	}
+
+            }
+            .card-left{
+            	
+            	position: relative;
+            	height:  100px;
+            	width: 100px;
+            	margin:  30px;
+            	left:  20%;
+
+            }
+
+            .card-left-content{
+            	 height:  100px;
+            	width: 100px;
+            	position: relative;
+            	top: -20px;
+            }
+	        .inner-card-button{
+	        	 background:  red;
+	        	 position: absolute;
+	        	 top: 123px;
+	        	 left:  10px;
+
+	        }
+              .inner-card-button a  {
+              	text-decoration: none;
+              	background:  #1f2e2e;
+              	padding:  9px;
+              	color: white;
+              	border-radius: 9px;
+
+              }
+              .bottom-left-card{
+              	background: red;
+              }
+              .box1-card3{
+                      
+              	
+              }
+
+               @media only screen and (max-width: 500px){
+               	 .inner-card {
+           		 width:  79%;
+           	}
+           	.card1{
+           		 width:  79%;
+           	}
+           .box1-card1{
+           		 width:  79%;
+           	}
+           	
+                   .left-card{
+           		 margin-top:  220px;
+           		 display: block;
+           		width:  79%;
+           		margin-left: 19px;
+           	}
+             .box1-card2{
+             	 margin-top:  640px;
+           		 display: block;
+           		width:  79%;
+           		margin-left: 19px;
+             }
+     
+            }
+            .card-left{
+            	
+            	position: relative;
+            	height:  100px;
+            	width: 100px;
+            	margin:  30px;
+            	left:  20%;
+
+            }
+            .card-left-content{
+            	 height:  100px;
+            	width: 100px;
+            	position: relative;
+            	top: -20px;
+            }
+	        .inner-card-button{
+	        	 background:  red;
+	        	 position: absolute;
+	        	 top: 123px;
+	        	 left:  10px;
+	        }
+              .inner-card-button a  {
+              	text-decoration: none;
+              	background:  #1f2e2e;
+              	padding:  9px;
+              	color: white;
+              	border-radius: 9px;
+
+              }
+
+
+               }
+              
+              
+              
+           
+	</style>
+        
+		
+		
+<div class="nav-bar">
+	<img src="LOGO.png" style="height: 90px;" /><label>Nightwatcher</label>
+	
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Course</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+<div class="card">
+	<div class="inner-card">
+	   <div class="card-left">
+		  <img class="card-left-content"src="C.png"/>
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="1st.html">Learn Now</a>
+	   </div>
+	</div>
+	<div class="left-card">
+		   <div class="card-left">
+		  <img class="card-left-content"src="C++.png"/>
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+
+	   </div>
+	   <div class="right-card">
+		  <div class="card-left">
+		  <img class="card-left-content"src="av.png"/>
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+	   </div>
+</div>
+<!--second  container  ari  para   web development  languages-->
+<div class="box">
+	<div class="card1" >
+     <div class="card-left">
+		  <img class="card-left-content"src="HTML.png"/>
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+	</div>
+	<div class="card2">
+		<div class="card-left">
+		  <img class="card-left-content"src="CSS.png" style="height: 170px; width: 180px; position: relative; top: -50px; right: 40px;" />
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+	</div>
+	<div class="card3">
+		 <div class="card-left">
+		  <img class="card-left-content"src="JS.png" style="height: 120px; width: 180px; position: relative; top: -20px; right: 40px; left: -30px;" />
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+	</div>
+</div>
+<!--- server language ari-->
+<div class="box1">
+  <div class="box1-card1">
+    <div class="card-left">
+		  <img class="card-image"src="PHP.png" style="height: 110px; width: 140px; position: relative; right: 40px;" />
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+  	
+  </div>
+  <div class="box1-card2">
+  	   <div class="card-left">
+		  <img class="card-image"src="PYTHON.png" style="height: 110px; width: 140px; position: relative; right: 40px;" />
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+  </div>
+  <div class="box1-card3">
+  	    <div class="card-left">
+		  <img class="card-image"src="SQL.png" style="height: 110px; width: 140px; position: relative; right: 40px;" />
+	   </div>
+	   <div class="inner-card-button">
+	   	 <a href="#">Learn Now</a>
+	   </div>
+  </div>
+</div>
+<div  class="card-inner-left">
+	<div class="card-inner-left-box">
+		<img src=""/>
+	</div>
+	 <div class="card-inner-left-box-button">
+	   	 <a class="card-inner-left-box-link" href="#">Learn Now</a>
+	   </div>
+	   <div class="card-inner-left-box" id="card-inner-left-box-side" style="background: green; position: absolute; top: 7%; left: 36%;">
+		<img src=""/>
+	</div>
+	 <div class="card-inner-left-box-button">
+	   	 <a class="card-inner-left-box-link" id="card-inner-left-box-link-side" href="#" style="
+	   	 position: absolute; left: 39%;">Learn Now</a>
+	   </div>
+</div>
+</head>
+</body>
+</html

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nightwatcher</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  <style>
+
+
+    body,html{
+      padding: 0;
+      margin: 0;
+
+    }
+    body{
+      background: #121212;
+
+    }
+    .nav-bar{
+      background: #1f2e2e;
+    }
+    .card{
+      background:  #1f2e2e;
+      height: 200px;
+      width:  810px;
+      margin-top: 30px;
+      margin-left: 20px;
+      border-radius: 9px;
+    }
+    .box{
+      background:  #1f2e2e;
+      height: 200px;
+      width:  810px;
+      margin-top: 30px;
+      margin-left: 20px;
+      border-radius: 9px;
+    }
+    .box1{
+      background:  #1f2e2e;
+      height: 200px;
+      width:  810px;
+      margin-top: 30px;
+      margin-left: 20px;
+      border-radius: 9px;
+    }
+    label{
+      color: white;
+      font-size: 14pt;
+       position: absolute;
+       margin-top: 30px;
+       letter-spacing: 3px;
+      
+
+    }
+    
+    ul{
+      float: right;
+      display: flex;
+      
+      padding: 0;
+      margin: 0;
+      height: 90px;
+    }
+    ul li{
+             list-style: none;
+             
+            
+             height: 20px;
+             margin-bottom: 60px;
+
+
+             
+
+
+    }
+    ul li a{
+       text-decoration: none;
+         display: flex;
+         color: white;
+        
+         height: 50px;
+        
+         margin-bottom: 100px;
+          margin: 50px;
+
+       
+    }
+    li:hover{
+            outline: 0;
+  border: none;
+   border-bottom-style:  solid;
+  border-bottom-color:  #00ff00;
+  transition: 0.5s;
+
+  background: #94b8b8;
+   height: 90px;
+   cursor: pointer;
+
+
+    }
+    li a:hover{
+      color: black;
+      font-weight: bold;
+    }
+    .inner-card{
+    background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      display: block;
+             position: absolute;
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 9px;
+    }
+    .card1{
+      background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      display: block;
+             position: absolute;
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 9px;
+    }
+    .box1-card1{
+      background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      display: block;
+             position: absolute;
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 9px;
+    }
+    
+        .left-card{
+                  background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 310px;
+      border-radius: 9px;
+           }
+           .card2{
+            background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 310px;
+      border-radius: 9px;
+           }
+           .box1-card2{
+              background: #00ffff;
+      height: 155px;
+      width:  210px;
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 310px;
+      border-radius: 9px;
+           }
+           .right-card{
+              background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      position: absolute;
+      margin-top: 20px;
+      margin-left:  584px;
+      border-radius: 9px;
+           }
+        .box1-card3{
+              background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      position: absolute;
+      margin-top: 20px;
+      margin-left:  584px;
+      border-radius: 9px;
+
+           }
+           .card3{
+             
+       background:  #00ffff;
+      height: 155px;
+      width:  210px;
+      position: absolute;
+      margin-top: 20px;
+      margin-left:  584px;
+      border-radius: 9px;
+
+           }
+           .card-image{
+            position: relative;
+            top: -10px;
+           }
+           .card-inner-left{
+             background: #1f2e2e;    
+             position: absolute;
+            width:  740px;
+             left: 53%;
+             top: 16%;
+             height: 195px;
+             border-radius: 9px;
+
+           }
+           .card-inner-left-box{
+             height:  82%;
+             background:  #00ffff;
+             width:  29%;
+              position: relative;
+              top: 7%;
+                left: 3%;
+                border-radius: 9px;
+
+           }
+           .card-inner-left-box-link{
+            text-decoration: none;
+                background:  #1f2e2e;
+                padding:  9px;
+                color: white;
+                border-radius: 9px;
+                position: absolute;
+                left: 4%;
+                top: 67%;
+           }
+         
+                   @media only screen and (max-width:1025px){
+                      .card-inner-left{
+                        
+                        position: absolute;
+                        background:   green;
+                            top: 116%;
+                            left:   2%;
+                            width:   80%;
+                      }
+                   }
+                   @media only screen and (max-width: 900px){
+                      .card-inner-left{
+                        
+                        background: blue;
+                        width:   97%;
+                      }
+                   }
+                    @media only screen and (max-width: 800px){
+                      .card-inner-left{
+                        
+                        background: yellow;
+                        width:   105%;
+                      }
+                   }
+            }
+          }
+
+  
+           @media only screen and (max-width: 700px){
+
+
+            .card {
+              width: 90%;
+              
+              height:  520px;
+              margin-top:  100px
+            }
+            .card-inner-left{
+              background: red;     
+             position: absolute;
+            width:  91%;
+              top: 295%;
+            height:  520px;
+               left: 3%;
+            }
+            .box {
+              width: 90%;
+              
+              height:  520px;
+              margin-top:  100px;
+              
+            }
+            .box1{
+              width: 90%;
+              
+              height:  520px;
+              margin-top:  100px;
+            }
+            
+            .inner-card {
+               width:  84%;
+            }
+           .card1 {
+               width:  84%;
+            }
+            .box1-card1 {
+               width:  78%;
+            }
+            
+             .left-card{
+               margin-bottom:  110px;
+               display: block;
+              width: 84%;
+              position: absolute;
+              top: 160px;
+              margin-left: 19px;
+
+            }
+            .card2{
+               margin-bottom:  210px;
+               display: block;
+              width: 80%;
+              position: absolute;
+              top: 980px;
+              margin-left: 19px;
+            }
+              .box1-card2{
+               margin-bottom:  210px;
+               display: block;
+              width: 80%;
+              position: absolute;
+              top: 980px;
+              margin-left: 19px;
+            }
+         
+
+            .right-card{
+              margin-top:  350px;
+               display: block;
+              width:  80%;
+              margin-left: 20px;
+            }
+            .card3{
+              margin-top:  350px;
+               display: block;
+              width:  80%;
+              margin-left: 20px;
+            }
+             .box1-card3{
+              margin-top:  350px;
+               display: block;
+              width:  80%;
+              margin-left: 20px;
+            }
+            ul{
+              
+              width: 100%;
+    height: auto;
+    position: absolute;
+
+              
+
+            }
+            li  {
+              
+            
+               height: auto;
+
+            }
+            li a{
+                  float: left;
+            }
+
+           }
+           
+           .linkbttn{
+               
+                position: absolute;
+                top: 18px;
+                left: 59px;
+                text-decoration: none;
+                color: white;
+                  text-align: center;
+              }
+              .inbutton{
+                 height: 60px;
+                               width: 200px;
+                                
+                              top: 70%;
+                                 left:  84%;
+                                 
+                                 border: none;
+              }
+             .con-button{
+               background: #121212;
+                               height: 60px;
+                               width: 200px;
+                                position: relative;
+                               top: 60%;
+                                 left:  46%;
+             }
+
+                .inbutton:hover{
+                  
+                   background: black;
+                  transition: 0.9s;
+                  border-style: solid;
+  border-left-color: #00ff00;
+ border-right-color: #00ff00;
+ 
+                }
+                 .con-button:hover{
+                   
+                
+                 background: #00ff00;
+                 height:  2px;
+                 transition: 0.9s;
+
+                 }
+                 .sel1{
+                  left: 80%;
+                 }
+                  .sel3{
+                     left:40%;
+                  }
+             
+           .contwer {
+              background: #293d3d; height: 600px; width: 90%; position: relative; top: 10%; margin: 90px; right: 1%; background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 9px;
+            }
+           .otr-bordr{
+background:white; width: 70%; height: 400px; margin-left: 20px;margin-bottom: 50px; position: absolute; top: 10%;  left: 14%; border-radius: 10px;
+           }
+.cnt{
+      background: transparent; height: 300px; position:absolute; width: 90%; left: 45px; top: 40px;border-radius: 10px;
+}
+.con-button1{
+background: red; height: 150px; width: 150px; border-radius: 400px; position: relative; top: 83%; left: 46%;
+}
+            @media only screen and (max-width: 400px){
+              .con-button1{
+                background: red; height: 100px; width: 100px; border-radius: 400px;
+                top: 88%; left: 37%;
+              }
+.contwer{
+  margin-top:  210%;
+  right: 25%;
+  height: 1260px;
+ 
+}
+.cnt{
+  height: 91%;
+  left: 7%;
+   top: -1%;
+   width:  80%;
+ 
+}
+.otr-bordr{
+  height: 91%;
+  left: 4%;
+   top: 5%;
+   width:  80%;
+  
+
+}
+              .linkbttn{
+               
+                position: absolute;
+                top: 18px;
+                left: 59px;
+                text-decoration: none;
+                color: white;
+                  text-align: center;
+              }
+              .inbutton{
+                 height: 60px;
+                               width: 200px;
+                                
+                              top: 78%;
+                                 left:  18%;
+                                 
+                                 border: none;
+              }
+             .con-button{
+               background: #121212;
+                               height: 60px;
+                               width: 200px;
+                                position: relative;
+                               top: 78%;
+                                 left:  18%;
+             }
+            
+               .sel1{
+              
+            display: inline-block;
+            float: right;
+            top: 100%;
+            font-size: 14px;
+            color: gray;
+
+          }.sel1:hover{
+          color: red;
+          }
+            .sel2{
+            display: inline-block;
+            float: right;
+            top: 100%;
+            font-size: 14px;
+            color: gray;
+            left: 58%;
+
+          }
+          .sel3{
+         
+            
+            top: 104%;
+            font-size: 14px;
+            color: gray;
+            left: 12%;
+
+          }
+           
+            h1{
+                  margin-left: 300px;
+                  text-align: center;
+              }
+              .caption-title{
+                margin-left: -400px;
+              }
+             
+              .pic-image{
+                 background-position: center;
+                 position: absolute;
+                 top: 26%;
+              }
+              
+              #card-inner-left-box-link-side{
+                top: 68%;
+                margin-left: -84px;
+              }
+              #card-inner-left-box-side{
+                margin-top: 200px;
+                margin-left: -83px;
+
+              }
+              .card-inner-left{
+                left: 7%;
+                width: 287px;
+                     background:  #1f2e2e;
+                }
+
+                .card-inner-left-box{
+                height: 160px;
+                width:  257px;
+                top: 5%;
+                left: 7%;
+               
+            }
+            .card-inner-left-box-link{
+              top: 28%;
+              left: 10%;
+            }
+                        ul{
+              
+              width: 70%;
+    height: auto;
+    position: absolute;
+   
+            }
+            li  {
+              
+            
+               height: auto;
+                 width: 45%;
+                
+                
+            }
+            li a{
+                  float: left;
+                  position: relative;
+                  right: 30px;
+                 
+                  
+                  
+            }
+            .card-image{
+              position: relative;
+              top: -20%;
+              
+
+            }
+            .inner-card {
+               width:  79%;
+            }
+            .card1 {
+               width:  79%;
+            }
+            .box1-card1{
+               width:  79%;
+            }
+
+              .left-card{
+               margin-top:  220px;
+               display: block;
+              width:  79%;
+              margin-left: 19px;
+            }
+            .box1-card2{
+               margin-top:  640px;
+               display: block;
+              width:  79%;
+              margin-left: 19px;
+
+            }
+
+            }
+            .card-left{
+              
+              position: relative;
+              height:  100px;
+              width: 100px;
+              margin:  30px;
+              left:  20%;
+
+            }
+
+            .card-left-content{
+               height:  100px;
+              width: 100px;
+              position: relative;
+              top: -20px;
+            }
+          .inner-card-button{
+             background:  red;
+             position: absolute;
+             top: 123px;
+             left:  10px;
+
+          }
+              .inner-card-button a  {
+                text-decoration: none;
+                background:  #1f2e2e;
+                padding:  9px;
+                color: white;
+                border-radius: 9px;
+
+              }
+              .bottom-left-card{
+                background: red;
+              }
+              .box1-card3{
+                      
+                
+              }
+
+
+               @media only screen and (max-width: 500px){
+                 .inner-card {
+               width:  79%;
+            }
+            .card1{
+               width:  79%;
+            }
+           .box1-card1{
+               width:  79%;
+            }
+            
+                   .left-card{
+               margin-top:  220px;
+               display: block;
+              width:  79%;
+              margin-left: 19px;
+            }
+             .box1-card2{
+               margin-top:  640px;
+               display: block;
+              width:  79%;
+              margin-left: 19px;
+             }
+     
+            }
+            .card-left{
+              
+              position: relative;
+              height:  100px;
+              width: 100px;
+              margin:  30px;
+              left:  20%;
+
+            }
+            .card-left-content{
+               height:  100px;
+              width: 100px;
+              position: relative;
+              top: -20px;
+            }
+          .inner-card-button{
+             background:  red;
+             position: absolute;
+             top: 123px;
+             left:  10px;
+          }
+              .inner-card-button a  {
+                text-decoration: none;
+                background:  #1f2e2e;
+                padding:  9px;
+                color: white;
+                border-radius: 9px;
+
+              }
+
+
+               }
+
+            
+
+             
+
+           
+  </style>
+            
+        
+    
+    
+<div class="nav-bar">
+  <img src="LOGO.png" style="height: 90px;" /><label>Nightwatcher</label>
+  
+  <ul>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="frontpage.html">Course</a></li>
+    <li><a href="#">Contact</a></i>
+  </ul>
+</div>
+<div class="pic-image" style="background-image: url('banner.jpg'); height: 500px; width: 100%;
+background-size: cover; display:  flex;">
+<div class="caption-title" style="background: white; position: absolute; top: 30%;left:  30%; letter-spacing: 1px; opacity: 0.5;">
+    <h1 >Learn in Programming and  Improve your skills</h1>
+</div>
+<div class="con-button1">
+  
+</div>
+ </div>
+<div class="contwer">
+  <div class="otr-bordr">
+  <div class="cnt" >
+
+  <p style="color: black; font-size: 14pt;">Hello  every  one  this  Dave S  Garcia I am creator  of  Nightwatcher  Blog  I want share of you  my own knowledge in programming before    on that   i want  to   apologize my   wrong grammar  english because  Im not good it comes   talk english  and this  my own thoughts  and  best of my  exprience hopefully   you  will  understand  on me   when   i  was  started  self study programming  it was  very hard   to me to learn    it beacause   there was  a  code cannot run  even  if you  forgot a  semicolon  you  will  get a  error    when  i  was  senior high   i didnt   expect  that   i loved  coding  because     honestly    i  didnt    know   in  microsoft   and i have no  interest on  technology  that   until    i  curious  on  my  friend  when   he  was    flashing  firmware in phone    from cherry    mobile    to  iphone   from that  day   i  started   learn      web development   i  was  thankful  to her  it because   he was the one  who  help me  when  i was  a struggling code. in programming  really awesome  you can  do everything  sometimes we can say that  programming   its  really difficult  actually  yes its  really difficult   programming  but if you loved  to code  you can   it was  amazing  you can make  anything    </p>
+  </div>
+</div>
+ </div>
